@@ -1,0 +1,42 @@
+body {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../images/background\ 2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header {
+    height: 200px;
+    background-color: transparent;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+.header-text {
+    position: relative;
+    top: 25%;
+    font-size: 50px;
+}
+
+#employee-table {
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+#add-employee {
+    margin-bottom: 30px;
+}
+#submit-button {
+    float: right;
+}
+.custom {
+    background-color: rgba(255,255,255,0.5) !important;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-database.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Train Schedule</title>
+</head>
+
+<body>
+    <div class="container" id="header">
+        <h1 class="text-center header-text">Train Schedule</h1>
+        <h4 class="text-center header-text">A guide to trains in the area</h4>
+    </div>
+
+    <div class="container" id="employee-table">
+        <div class="card">
+            <div class="card-header">
+                Current Train Schedule
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency (min)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody id="info">
+
+
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="add-employee">
+        <div class="card">
+            <div class="card-header">
+                Add Train
+            </div>
+            <div class="card-body">
+
+                <label for="basic-url">Train Name</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="name-input" aria-describedby="basic-addon3">
+                </div>
+
+                <label for="basic-url">Destination</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="dest-input" aria-describedby="basic-addon3">
+                </div>
+
+                <label for="basic-url">First Train Time (HH:mm - military time)</label>
+                <div class="input-group mb-3">
+                    <input type="time" class="form-control" id="first-train-input" aria-describedby="basic-addon3" />
+                </div>
+
+                <label for="basic-url">Frequency (min)</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="frequency-input" aria-describedby="basic-addon3">
+                </div>
+
+                <button type="button" class="btn btn-primary" id="submit-button">Submit</button>
+
+
+            </div>
+
+            <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
